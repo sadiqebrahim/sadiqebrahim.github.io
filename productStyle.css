@@ -58,7 +58,7 @@ a:hover{
   padding: 45%;
   font-size: 50px;
   font-family: sans-serif;
-  background-image: url("watches2.jpg");
+  background-image: url("/product images/watches2.jpg");
   color: rgb(10, 14, 147);
   margin: 0 -8px 0 -8px;
   background-repeat: no-repeat;
@@ -81,14 +81,14 @@ a:hover{
 }
 
 #Wn{
-  background-image: url("watches3.jpg");
+  background-image: url("/product images/watches3.jpg");
   background-repeat: no-repeat;
   background-size: auto;
 }
 
 
 #not{
-  background-image: url("watches1.jpg");
+  background-image: url("/product images/watches1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 text-align: center;
