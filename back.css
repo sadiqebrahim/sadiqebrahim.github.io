@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+
+}
+.gen {
+  height: 100vh;
+  width : 100%;
+  margin: -15px;
+}
+
+.head {
+  background-color: #55ff88;
+}
+
+.fir {
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/024/538/827/original/pixel-jeff-clipa-s.gif?1582740711");
+  background-attachment: fixed;
+}
+
+.sec {
+  background-image: url("https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg");
+  background-attachment: fixed;
+}
+
+.thi {
+  background-image: url("https://png.pngtree.com/illustrations/20190327/ourmid/pngtree-cure-starry-sky-night-sky-star-png-image_38228.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.fou {
+  background-image: url("https://photographylife.com/wp-content/uploads/2018/11/Nikon-Z7-Image-Sample-26.jpg");
+  background-attachment: fixed;
+}
+
+.fif {
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/39/346/426/digital-art-men-city-futuristic-night-hd-wallpaper-thumb.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
