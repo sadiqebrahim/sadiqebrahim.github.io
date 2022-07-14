@@ -25,12 +25,6 @@ body{
   background-color: rgb(105, 134, 98);
 }
 
-@media (max-width: 58.75em) {
-  .nav {
-    justify-content: center;
-  }
-}
-
 ul
 {
   list-style: none;
@@ -42,6 +36,15 @@ ul
 li{
   margin-right: 1rem;
   font-size: 25px;
+}
+
+@media (max-width: 58.75em) {
+  .nav {
+    justify-content: center;
+  }
+  li {
+    font-size: 20px;
+  }
 }
 
 h1{
