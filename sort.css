@@ -1,0 +1,29 @@
+* {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.bars {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.bar
+{
+  width: 1%;
+  font-weight: bolder;
+  font-size: 1vw;
+  background-color: rgb(2, 172, 99);
+}
+
+.button:hover
+{
+  background-color: rgb(129, 187, 143);
+}
