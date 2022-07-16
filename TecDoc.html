@@ -1,0 +1,307 @@
+<link rel="stylesheet" href="tecStyl.css">
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Programming with C++</title>
+  </head>
+  <body>
+
+    <nav id="navbar">
+      <header>
+        Object Oriented Programming with C++
+      </header>
+
+      <ul>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#Progrmming_Paradigms" class="nav-link">Progrmming Paradigms</a></li>
+        <li><a href="#Basic_Concepts_of_OOP" class="nav-link">Basic Concepts Of OOP</a></li>
+        <li><a href="#Implementing_OOP_Concepts" class="nav-link">Implementing OOP Concepts</a></li>
+        <li><a href="#Advantages_of_OOP" class="nav-link">Advantages of OOP</a></li>
+        <li><a href="#Disadvantages_of_OOP" class="nav-link">Disadvantages of OOP</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+       <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+
+        <p>The C ++ programming language was developed at AT&T Bell Laboratories in the early 1980s by Bjarne Stroustrup. He found 'C' lacking for
+          simulations and decided to extend the language by adding features from his favourite language, Simula 67. Simula 67 was one of the earliest
+          object-oriented languages. Bjame Stroustrup called it "C with Classes" originally. The name C++ (pronounced C plus plus) was coined by Rick
+          Mascitti where"++" is the C increment operator. Ever since its birth, C++ evolved to cope with problems encountered by users, and through
+          discussions at AT&T. However, the maturation of the C++ language was attested to by two events :</p>
+        <ul>
+          <li>the formation of an ANSI (American National Standard Institute) C++ committee</li>
+          <li>the publication of The Annotated C ++ Reference Manual by Ellis and Stroustrup.</li>
+        </ul>
+
+        <p>The latest C ++ standards document was issued by ANSI/ISO in year 2011 namely C++11 or formally C++Ox.</p>
+
+        <p>The major reason behind the success and popularity of  C++ is that it supports the object oriented technology, the latest in the software
+          development and the most near to the real world.</p>
+
+        <p>We will begin with a brief discussion of various programming paradigms that C++ supports i.e., procedural programming style, object
+          based programming style and object oriented programming style. This is followed by detailed discussion of object oriented programming and
+          its implementation. All this shall help you appreciate OOP style and its advantages over other programming methodologies.</p>
+
+       </section>
+
+       <section class="main-section" id="Progrmming_Paradigms">
+         <header>Progrmming Paradigms</header>
+
+         <p>A programming paradigm defines the methodology of designing and implementing programs using the key features and other building blocks
+           (such as key- words, function preprocessor directions etc .) of a programming language. A programming paradigm gives you an idea how problems
+           are generally analysed and solved in a particular programming language.</p>
+
+        <ul>
+          <li>Object Based Programming</li>
+        <p>Object based Programming is a newer paradigm that implements some features of object oriented programming but not all. In object based programming,
+          data and its associated meaningful functions are enclosed in one single entity a class. Classes enforce information hiding and abstraction thereby
+          separating the implementation details (how the process is actually taking place) and the uses interface (i .e ., how the uses views and uses it).
+          [For instance, you can consider a calculator, its interface would include a small display screen and a few buttons that is available to user and
+          implementation details i. e., how actual calculations are ta king place are hidden from user.]</p>
+
+        <p>In other words, users of a class are allowed to access its interface but they cannot access its implementation details.</p>
+
+        <ol>
+          <li>Object based programming localizes the implementation details</li>
+          <p>In object bas ed programming, whenever there is any change in the definition of type, user's interface remains unaffected generally. For example,
+             consider the same student structure which will be implemented as class in object based programming as shown below :</p>
+             <code>class Student
+             { int rollno;
+                 char name[25] ;
+                 int clas ;
+                 float marks ;
+
+                 public :
+                  void readstudent( ) ;
+                   void dispstudent( ) ;
+               } ;</code>
+
+          <p>For now, all you need to know is that a class is a structure and it can even hold functions in it. And only the declarations under public: make
+            user interface. Now if you need to include one more field grade in Student then the class would became as:</p>
+            <code>class Student
+              { int rollno;
+              char name[25] ";
+              int clas;
+              float marks ;
+              char grade;
+            </code>
+
+            <code>
+              public :
+              void readstudent( ) ;
+              void disstudent( ) ;
+            } ;
+            </code>
+
+          <p>Now the users would not know that a newfield has been added ; they continue to get the same interface.</p>
+          <p>But don't you think there would be some changes in the code of some functions? yes, you are right, some changes would definitely be there 1n some
+             code (e .g., in d1spstudent) by the programmer, but the user cannot acccss the data of the class student directly which was possible in procedural
+             programming. This is becuse the change is localized to the definition of the chnnged function.</p>
+
+          <li>Object based programming is subset of Object Oriented programming</li>
+          <p>The object based programming can be thought of as subset of object oriented progrnmming as it also implements some of the features implemented
+            by object oriented programming e.g., information hiding, abstraction, classes, function overloading etc. but it does not implement inheritance and
+            thereby polymorphism as polymorphism requires inheritance for its implementation. So, neither inheritance nor polymorphism is implemented by object
+           based languages.</p>
+
+          <li>Advantages and Limitations of Object based programming</li>
+          <p>Being a subset of object oriented programming, the object based programmings offers some similar advantages as OO programing e.g.,</p>
+          <ol>
+            <li> it overcomes most shortcomings of procedural programming,</li>
+            <li> it localizes changes and hides implementation details from user,</li>
+            <li> it supports user-defined types,</li>
+            <li> implements information hiding and abstraction etc.</li>
+          </ol>
+          <p>However, object based programming suffers from one major limitation and that is its inability to represent real world relationships that exist among
+            object. For example, both car and truck are vehicles. This cannot be represented in object based programming as it does not support inheritance.</p>
+        </ol>
+         <li>Object Oriented Programming</li>
+         <p>The object oriented programming paradigm is superset of object based programming. It offers all the features of object based programming and overcomes
+           its limitations by implementing inheritance so that real-world relations among objects can be represented programmahcally.</p>
+         </ul>
+       </section>
+
+       <section class="main-section" id="Basic_Concepts_of_OOP">
+         <header>Basic Concepts Of OOP</header>
+         <p>The object oriented programming has been developed with a view to overcome the drawbacks of conventional programming approaches. The OOP approach is based
+            on certain concepts that help it attain its goal of overcoming the drawbacks or shortcomings of conventional programming approaches. These general concepts
+            of OOP are given below:</p>
+            <ul>
+              <li>Data Abstraction</li>
+              <li>Data Encapsulation</li>
+              <li>Modularity</li>
+              <li>Inheritance</li>
+              <li>Polymorphism</li>
+            </ul>
+
+          <ol>
+            <li>Data Abstraction</li>
+            <p>Abstraction is the concept of simplifying a real world concept into its essential elements.</p>
+            <p>To understand abstraction, let us take an example. You are driving a car. you only know the essential features to drive a car e.g., gear handhling,
+              steering handling, use of clutch, accelerator, brakes etc. etc. But while driving do you get into internal details of car like wiring, motor working
+            etc.? You just change the gears or apply the brakes etc. What is happening inside is hidden from you. This is abstraction where you only know the
+            essential things to drive a car without including the background details or explanations.  Take another example of switch board. You only press certain
+            switches according to your requirement. What is happening inside, how it is happening etc. you needn't know. Again this is abstraction, you know only
+            the essential things to operate on switch board without knowing the background details of switch board.</p>
+
+            <li>Encapsulation</li>
+            <p>Encapsulation is the most fundamental concept of OOP. It is the way of combining both data and the functions that operate on that data under a
+              single unit.</p>
+            <p>The only way to access the data is provided by the functions (that are combined along with the data). These functions are called member functions
+              in C ++. The data cannot be accessed directly. If you want to read a data item in an object (an instance of the class) you call a member function
+              in the object. lt will read the item and return the value to you. You can't access the data directly . The data is hidden, so it is safe from
+              accidental alteration. Data and its functions are said to be encapsulated into a single entity.</p>
+            <p>Let us now consider an analogy to encapsulation. In a big company, there are so many departments, Sales, Accounts, Payroll, Purchase, Production
+               etc. Each department has its own personnel that maintain its data. Suppose an employee in the production dept. wants to know how much raw material
+                has been purchased for the next month. The production dept employee would not be allowed to himself go through the purchase dept. data files.
+                Rather he'll have to issue a memo to the 'purchase' requesting for the required information. Then some employee of the 'purchase' dept. will go
+                through the purchase data files and send the reply with the asked information. This practice ensures that the data is accessed accurately and that
+                it is not corrupted by inept outsiders. Therefore, we can say here 'Department data and department employees are encapsulated into a single entity,
+                the department'. In the same way, objects provide an approach to program organization while helping to maintain the integrity of the program data.
+                Since the classes use the concept of data abstraction, they are known as Abstract Data Types (ADT). 'Data types' because these can be used to create
+                objects of its own type.</p>
+            <p>Abstraction and encapsulation are complementary concepts: abstraction focuses upon the observable behaviour of an object, whereas encapsulation
+              focuses upon the implementation that gives rise to this behaviour. Encapsulation is most often achieved through information hiding, which is the
+              process of hiding all the secrets of an object that do not contribute to its essential characteristics, the structure of an object is hidden, as
+              well as the implementation of its methods. Only the essential characteristics of object are visible. In the above example of departments, only the
+              essential information of departments are visible viz . dept-name, dept-head, no-of-employees etc. The secret information which is not essential is
+              hidden viz. dept-profit/loss, stock etc. This information is made avail able only if the request is made through proper channel e.g ., issuing a memo
+              etc.</p>
+
+            <li>Polymorphism</li>
+            <p>Polymorphism is key to the power of object oriented programming. It is so important that languages that don't support polymorphism cannot advertise
+               themselves as OO languages. Languages that support classes but not polymorphism are called ob1ect-based language. Ada is such a language.</p>
+            <p>Polymorphism is the concept that supports the capability of an object of a class to behave differently in response to a message or action. For
+              instance, 'Human' is a subclass of 'Mammal'. Similarly dog, cat, are also subclasses of 'Mammal'. Mammals can see throug day-light. So if a message,
+              'see through daylight' is passed to all mammals, they all will behave alike. Now if a message 'see through darkness is passed to a mammals, then
+              humans and dogs will not be able to view at night whereas cats will be able to view during night also. Here cats (mammals) can behave differently
+              than other mammals in response to a message or action. This 1s polymorphism. Take another example. If you give 5 + 7, it results into 12, the sum of 5
+              and 7. And if you give 'A' + 'BC', it results into 'ABC' , the concatenated strings . The same operation symbol '+' is able to distinguish between the
+              two operations (summation and concatenation) depending upon the data type it is working on. Here we can define polymorphism in context of OO programming.
+            </p>
+          </ol>
+       </section>
+
+       <section class="main-section" id="Implementing_OOP_Concepts">
+          <header>Implementing OOP Concepts</header>
+           <ol>
+             <li>Implementing Objects</li>
+             <p>Our aim is to implement a real world object in the form of a software object. Real World objects have physical characteristics (state) and behaviour
+               e.g., a motorbike has:</p>
+               <ul>
+                 <li>Characteristics - current gear, two wheels, number of gears, .. ....</li>
+                 <li>Behaviour - braking, accelerating, charging years etc.</li>
+                 <li>The software objects also have state and behaviour.</li>
+                 <li>Their state is maintained through variables or data items.</li>
+                 <li>Their behaviour is implemented through functions generally called methods.</li>
+               </ul>
+              <p>In other words, we can define an object, in software terms, as a software bundle of variables and related methods.</p>
+              <p>While implementing an abstraction of a real world entity in software form, all its physical characteristics are depicted through data items and all
+                its functionality i.e., behaviour is implemented through functions which are called methods</p>
+              <li>Implementing Data Hiding, Data Abstraction and Encapsulation</li>
+              <p>Encapsulation is wrapping up of characteristics and behaviour into one unit. While implement1ng encapsulation, following things are taken care of
+                :</p>
+                <ol>
+                  <li>Anything that an object does not know or cannot do is excluded from the object.</li>
+                  <li>Encapsulnt1on is used to hide unimportant implementation details from other objects.</li>
+                  <li>Packaging an object's variables within the protective custody of its methods is called encapsulation and this task is accomplished through
+                    Classes i.e., the data and associated functions are wrapped up in one unit called class.</li>
+                </ol>
+                <p>A class binds together data and its associated functions under one unit thereby enforcing encapsulation as encapsulation means wrapping up
+                  data and associated functions together into a single unit.</p>
+                <p>A class groups its members into three sections : private, protected, and public. The private and protected members remain hidden from outside
+                  world. Thus through private and protected members, a class enforces data-hiding.</p>
+                <p>The outside world is given only the essential and necessary information through public members, rest of the things remain hidden , which is
+                  nothing but abstraction. As abstraction means representation of essential features without including the background details or explanation.</p>
+                <p>A class is defined as:</p>
+                <code>class 'class name' { private :
+                                    // hidden data members/methods here
+                                    protected :
+                                    // unimportant implementation details here
+                                    public:
+                                    // exposed important details here.
+                } ;</code>
+                <p>Through encapsulation, an interface is made available to world through which users can use the class. For example,</p>
+                <ul>
+                  <li>When you want to change gears on your motor bike you don't need to know how the gear mechanism works, you just need to know which lever
+                     to move.</li>
+                  <li>with software objects, you don't need to know how a method is implemented; you just need to know which method to invoke and its interface.</li>
+                </ul>
+                <p>And benefits that come bundled with encapsulation are:</p>
+                <ol>
+                  <li>Modularity</li>
+                   <ul>
+                     <li>Source code can be writteen and maintained independently.</li>
+                     <li>An obiect can be passed easily around.</li>
+                   </ul>
+                  <li>Information hiding</li>
+                    <ul>
+                      <li>An object has a public interfacef or other objects to communicate with.</li>
+                      <li>An object can maaintain private information and methods that can be changed without affecting other objects.</li>
+                    </ul>
+                </ol>
+                <li>Implementing Inheritance</li>
+                <p>Inheritance is implemented in C++ by specifying the name of the (base) class from which the class being defined (the derived class) has
+                  to inherit from.</p>\
+                <p>It is done somewhat like :</p>
+                <code>class< derived class name> : < base class name>
+                  {
+                    ~ derived class own features.
+                  }</code>
+                <p>In C++ an Abstract Class is the one, which defines an interface, but does not necessarily provide implementations for all its member functions.
+                  An abstract class is meant to be used as the base class from which other classes are derived. The derived class is expected to provide
+                  implementations for the member functions that are not implemented in the base class. A derived class that implements all the missing functionality
+                  is called a Concrete Class. A concrete class derives from its abstract class.</p>
+                <p>To understand this, consider the following example.</p>
+                <p>A shape is an abstract class. It suggests a state e.g. , shapes have a colour, or siz etc. It defines on interface also - shapes have surface
+                  area , volume, perimeter etc. But it does not specify how to implement this interface . If I ask, how would you calculate area of a shape? You'll
+                  ask-which shape? See, it itself explains it. There is no direct instance of shape. From shape class, other classes like circle class, rectangle
+                  class, triangle class inherit. These classes are concrete classes as they provide proper functionality for its member functions. A shape can always
+                  be either a circle or a triangle and so on. It can't just only be a shape- for shape is abstract, a triangle or a circle is concrete.</p>
+                <li>Implementation Polymorphism</li>
+                 <p>Polynomial is the attribute that allows one interface to be used with different situation.</p>
+                 <p>C++ implements polymorphis m through virtual functions, overloaded functions and overloaded operators. A virtual function is used to specify
+                   the interface 1s abstract class, but its implementation details are made available by the concrete class(es) . The term overloading means a
+                 name having two or more distinct meanings. Thus an overloaded function refers to a function having (one name and) more than one distinct meanings.
+               Similarly, when two or more distinst meanings are defined for an operator, it is said to be overloaded operator.</p>
+           </ol>
+       </section>
+
+       <section class="main-section" id="Advantages_of_OOP">
+         <header>Advantages Of OOP</header>
+         <ol>
+           <li>Re-use of code</li>
+           <p>Linking of code to objects and explicit specification of relations between objects allows relatcd objects to share code. Encapsulation allows class
+             definitions to be re-used in oher  applications. The availability of a consistent interface to objects lessens code duplication and thereby improves
+             code re-usability.</p>
+            <li>Ease of comprehension</li>
+            <p>THe classes can be set up to closely represent the generic application concepts and processes. OOP codes are more near to real-world models than
+              other programming methodologies' codes.</p>
+            <li>Ease of fabrication and maintenance</li>
+            <p>The concepts such as encapsulation, data abstraction allow for verv clean designs When an object is going into disallowed states, which are not
+              permitted,  only its methods need be investigated e.g. if student is getting more than maximum marks, only the functions are to be retested. This
+              narrows down search for problems.</p>
+            <li>Easy redesign and extension</li>
+            <p>The same concepts facilitate easy redesign and extension.</p>
+         </ol>
+       </section>
+
+       <section class="main-section" id="Disadvantages_of_OOP">
+         <header>Disadvantages Of OOP</header>
+         <ul>
+           <li>With OOP, classes tend be overly generalised</li>
+           <li>The relations among classes become artificial at times.</li>
+           <li>The OOP program design is tricky.</li>
+           <li>Also one needs to do proper planning and proper design for OOP programming·</li>
+           <li>To program with OOP, programmer need proper skills such as design skills, pragramming skills, thinking in term of object etc.</li>
+         </ul>
+       </section>
+
+     </main>
+
+  </body>
+</html>
