@@ -217,13 +217,13 @@ h3{
 footer{
   font-weight: 300;
    display: flex;
-   justify-content:  flex-end;
+   justify-content:  center;
    align-items: center;
    height: 2vh;
    padding: 2rem;
      background-color: rgb(61, 101, 51);
    border-top: 4px solid rgb(79, 170, 47);
-   font-size: 20px;
+   font-size: 12px;
 
 }
 
@@ -248,11 +248,4 @@ body{background-color:#000;}
   -webkit-transform: translate(-50%, 0%) rotate(45deg);
   -moz-transform: translate(-50%, 0%) rotate(45deg);
   transform: translate(-50%, 0%) rotate(45deg);
-}
-
-@media (max-width: 58.75em) {
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
 }
