@@ -249,3 +249,9 @@ body{background-color:#000;}
   -moz-transform: translate(-50%, 0%) rotate(45deg);
   transform: translate(-50%, 0%) rotate(45deg);
 }
+
+@media (max-width: 58.75em) {
+  footer {
+    font-size: 8px;
+  }
+}
