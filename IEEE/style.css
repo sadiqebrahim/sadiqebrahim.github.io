@@ -36,7 +36,7 @@ header img{
 .form{
     position:relative; 
     top: 50%; 
-    margin: auto; 
+    margin: auto;
     background: rgba(0,0,0,.5);
     width: 400px;  
     padding: 40px;
@@ -140,5 +140,30 @@ header img{
     }
     .form{
         width: 600px;
+    }
+}
+
+@media (max-width:450px) {
+    .form {
+        width: 350px;
+        margin-left: 22px;
+    }
+    .element input {
+        font-size: 13px;
+    } 
+    .element label {
+        font-size: 13px;
+    }
+    .form h1 {
+        font-size: 30px;
+    }
+    .select {
+        font-size: 14px;
+    }
+    .button {
+        margin-left: 50px;
+    }
+    .button:active {
+        margin-left:55px;
     }
 }
