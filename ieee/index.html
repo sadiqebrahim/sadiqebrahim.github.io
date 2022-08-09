@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IEEE MLAS 2.0</title>
+</head>
+<body>
+    <header>
+        <img src="sb1.png" alt="IEEE SB JU">
+    </header>
+    <div class="top">
+        <h1>MLAS 2.0</h1>
+        <p>The Machine Learning (ML) Accelerator is IEEE JU SB's flagship event to sow the seeds of interest and information about ML in young minds and tech aficionados.</p>
+    </div>
+    <div id="form-container" class="form">
+        <h1>REGISTRATION</h1>
+        <form name="form" method="post">
+            <div class="element">
+                <input type="text" name="name" required>
+                <label>Name</label>
+            </div>
+            <div class="element">
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+            <div class="element">
+                <input type="number" name="number" required>
+                <label>Contact No.</label>
+            </div>
+            <div class="element">                
+                <input type="text" name="year" required>
+                <label>Currrent Year</label>
+            </div>
+            <div class="element">
+                <input type="text" name="department"  required>
+                <label>Department</label>
+            </div>
+            <div class="select">
+                <p>Are you IEEE member?</p>
+                <input name="member" id="yes" value="yes" type="radio" required>
+                <label for="yes">YES</label><br>
+                <input name="member" id="no" value="no" type="radio" required>
+                <label for="no">NO</label>
+            </div>
+            <div id="id" class="element show">
+                <input type="text" name="id">
+                <label>IEEE ID</label>
+            </div>
+            <input class="button" type="submit" value="REGISTER">
+        </form>
+    </div>
+    <footer>
+        <p></p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
