@@ -15,7 +15,7 @@ body{
 }
 
 .nav a{
-  text-decoration: none;S
+  text-decoration: none;
     color: rgb(134, 0, 0);
     color: #65227C;
     padding: 20px;
@@ -24,6 +24,7 @@ body{
 .nav a:hover{
   background-color: rgb(105, 134, 98);
 }
+
 
 ul
 {
@@ -42,7 +43,7 @@ li{
   .nav {
     justify-content: center;
   }
-  li {
+  li{
     font-size: 20px;
   }
 }
@@ -83,6 +84,7 @@ h3{
 }
 
 .projects{
+  margin: 0;
   text-align: center;
   padding: 2rem 2rem;
   background-color: rgb(105, 134, 98);
@@ -90,13 +92,13 @@ h3{
 
 @media (max-width: 58.625em) {
   .projects {
-    padding: 6rem 1rem;
+    padding: 5rem 1rem;
   }
 }
 
 .projects > h1
 {
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-family: serif;
 }
 
@@ -149,12 +151,15 @@ h3{
   background-color: rgb(43, 61, 140);
   font-size: 25px;
   border-radius: 2px;
+  border-color: rgb(43, 61, 140);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: white;
 
 }
 
 .btn:hover{
   background-color:  rgb(79, 170, 47);
+  border-color: rgb(79, 170, 47);
 }
 
 
@@ -221,7 +226,7 @@ footer{
    align-items: center;
    height: 2vh;
    padding: 2rem;
-     background-color: rgb(61, 101, 51);
+   background-color: rgb(61, 101, 51);
    border-top: 4px solid rgb(79, 170, 47);
    font-size: 12px;
 
@@ -249,7 +254,6 @@ body{background-color:#000;}
   -moz-transform: translate(-50%, 0%) rotate(45deg);
   transform: translate(-50%, 0%) rotate(45deg);
 }
-
 @media (max-width: 58.75em) {
   footer {
     font-size: 8px;
